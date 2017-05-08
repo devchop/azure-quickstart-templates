@@ -25,9 +25,9 @@
     },
     "OS": {
       "type": "string",
-      "defaultValue": "Ubuntu",
+      "defaultValue": "RHEL",
       "allowedValues": [
-        "Ubuntu",
+        "RHEL",
         "Windows"
       ],
       "metadata": {
@@ -42,10 +42,10 @@
     "subnet1Prefix": "10.0.0.0/24",
     "subnet1Ref": "[resourceId('Microsoft.Network/virtualNetworks/subnets',variables('virtualNetworkName'),variables('subnet1Name'))]",
     "availabilitySetName": "myAvSet",
-    "Ubuntu": {
-      "publisher": "Canonical",
-      "offer": "UbuntuServer",
-      "sku": "16.04.0-LTS",
+    "RHEL": {
+      "publisher": "RedHat",
+      "offer": "RHEL",
+      "sku": "6.7",
       "version": "latest"
     },
     "Windows": {

@@ -132,7 +132,7 @@
           "id": "[resourceId('Microsoft.Compute/availabilitySets', variables('availabilitySetName'))]"
         },
         "hardwareProfile": {
-          "vmSize": "Standard_D1_v2"
+          "vmSize": "Standard_H16r"
         },
         "osProfile": {
           "computerName": "[concat('vm', copyIndex())]",
